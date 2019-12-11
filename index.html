@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="clock">
+        <svg id="local-time" height="400" width="400">
+            <!-- circle for hr, min and sec -->
+            <circle cx="200" cy="200" r="190" fill="none" stroke="rgb(150, 255, 100)" stroke-width="20"
+                stroke-linecap="round" transform="rotate(-90,200,200)" />
+            <circle cx="200" cy="200" r="172" fill="none" stroke="rgb(150, 100, 255)" stroke-width="15"
+                stroke-linecap="round" transform="rotate(-90,200,200)" />
+            <circle cx="200" cy="200" r="160" fill="none" stroke="rgb(255, 100, 150)" stroke-width="10"
+                stroke-linecap="round" transform="rotate(-90,200,200)" />
+
+            <text x="220" y="180" fill="rgb(150, 100, 255)" font-size="smaller"></text>
+            <text x="220" y="195" fill="rgb(255, 100, 150)" font-size="smaller"></text>
+
+            <!-- Line for hr, min and sec -->
+            <line x1="200" y1="90" x2="200" y2="200" stroke="rgb(150, 255, 100)" stroke-width="10"
+                stroke-linecap="round" />
+            <line x1="200" y1="70" x2="200" y2="200" stroke="rgb(150, 100, 255)" stroke-width="8"
+                stroke-linecap="round" />
+            <line x1="200" y1="85" x2="200" y2="200" stroke="rgb(255, 100, 150)" stroke-width="5"
+                stroke-linecap="round" />
+
+            <!-- Circle for dot in the center -->
+            <circle cx="200" cy="200" r="3" fill="#fff" stroke-linecap="round"></circle>
+        </svg>
+        <label for="">Local Time</label>
+    </div>
+    <div class="clock">
+        <svg id="utc-time" height="400" width="400">
+            <!-- circle for hr, min and sec -->
+            <circle cx="200" cy="200" r="190" fill="none" stroke="rgb(150, 255, 100)" stroke-width="20"
+                stroke-linecap="round" transform="rotate(-90,200,200)" />
+            <circle cx="200" cy="200" r="172" fill="none" stroke="rgb(150, 100, 255)" stroke-width="15"
+                stroke-linecap="round" transform="rotate(-90,200,200)" />
+            <circle cx="200" cy="200" r="160" fill="none" stroke="rgb(255, 100, 150)" stroke-width="10"
+                stroke-linecap="round" transform="rotate(-90,200,200)" />
+
+            <!-- Line for hr, min and sec -->
+            <line x1="200" y1="90" x2="200" y2="200" stroke="rgb(150, 255, 100)" stroke-width="10"
+                stroke-linecap="round" />
+            <line x1="200" y1="70" x2="200" y2="200" stroke="rgb(150, 100, 255)" stroke-width="8"
+                stroke-linecap="round" />
+            <line x1="200" y1="85" x2="200" y2="200" stroke="rgb(255, 100, 150)" stroke-width="5"
+                stroke-linecap="round" />
+
+            <!-- Circle for dot in the center -->
+            <circle cx="200" cy="200" r="3" fill="#fff" stroke-linecap="round"></circle>
+        </svg>
+        <label for="">UTC Time</label>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

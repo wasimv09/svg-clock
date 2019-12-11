@@ -1,0 +1,24 @@
+{
+  "name": "svg-clock",
+  "version": "1.0.0",
+  "description": "Analog Clock using svg",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wasimv09/svg-clock.git"
+  },
+  "keywords": [
+    "clock",
+    "svg",
+    "javascript"
+  ],
+  "author": "Wasim Varshani",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wasimv09/svg-clock/issues"
+  },
+  "homepage": "https://github.com/wasimv09/svg-clock#readme"
+}
